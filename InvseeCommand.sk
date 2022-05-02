@@ -1,0 +1,16 @@
+# Skript by lasse
+# Version 1.1
+
+options:
+	prefix: &cInvsee &8»
+	noperm: &cInvsee &8» &cKeine Rechte.	
+
+command /invsee [<player>]:
+	permission: server.command.invsee
+	permission message: {@noperm} 
+	trigger:
+		if arg 1 is not set:
+			send "{@prefix} &cBitte gebe einen Namen an"
+		else:
+			send "{@prefix} &cDu hast das Inventar von &b%arg-1% &cgeöffnet"
+			open the arg-1's inventory for the player
