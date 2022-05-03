@@ -3,7 +3,7 @@
 
 options:
 	prefix: &cInvsee &8»
-	noperm: &cInvsee &8» &cKeine Rechte.	
+	noperm: &cInvsee &8» &cDafür hast  du keine Rechte.
 
 command /invsee [<player>]:
 	permission: server.command.invsee
